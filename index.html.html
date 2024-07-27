@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="title-bar" id="title-bar">
+            <h1>PROTFOLIO- Roshan Kr Singh</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <section id="home" class="slide">
+            <div class="home-content">
+                <div class="text-content">
+                    <h2 class="animate-text">Hi, I'm Roshan Kumar Singh</h2>
+                    <h3 class="animate-text">Full Stack Developer</h3>
+                </div>
+                <div class="image-content">
+                    <img src="images/rr.jpeg" alt="Roshan Kumar Singh" class="profile-image animate-image">
+                </div>
+            </div>
+        </section>
+        <section id="about" class="slide">
+            <div class="about-container">
+                <div class="about-content">
+                    <h1>About Me</h1>
+                    <p>My name is Roshan Kumar Singh and I completed my Bachelor's degree in Computer Science from Chandigarh University. I'm very passionate about full stack development and have dedicated the past few years to refining my skills in this field.
+                    I have a strong foundation in both front-end and back-end development, allowing me to work seamlessly across the entire technology stack.
+                    I'm always eager to learn and stay updated with the latest industry trends and technologies. I believe in continuous self-improvement and have a growth mindset, which motivates me to explore new technologies and frameworks to enhance my development skills.</p>
+                    <a href="ROSHAN_TECH_RESUME.pdf" class="resume-button" download>Download Resume</a>
+                </div>
+                <div class="about-extra">
+                    <div class="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Bachelor's in Computer Science - Chandigarh University CGPA : 7.81</li>
+                        </ul>
+                    </div>
+                    <div class="achievements">
+                        <h2>Achievements</h2>
+                        <ul>
+                            <li>Certified in Java Full Stack Development</li>
+                            <li>Certified in Programming with Python</li>
+                            <li>100+ JAVA Questions solved</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="slide">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <img src="images/s1.png" alt="HTML" class="skill-image">
+                    <h2>HTML</h2>
+                    <p>Markup language for creating web pages.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="images/s2.jpg" alt="CSS" class="skill-image">
+                    <h2>CSS</h2>
+                    <p>Style sheet language for designing web pages.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="images/s3.jpeg" alt="JavaScript" class="skill-image">
+                    <h2>JavaScript</h2>
+                    <p>Scripting language for dynamic web content.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="images/s4.jpeg" alt="Java" class="skill-image">
+                    <h2>Java</h2>
+                    <p>Programming language for building applications.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="slide">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="project-item">
+                    <a href="https://webrosh-007.github.io/TextUtils-React/" target="_blank">
+                        <img src="images/pp1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <p>It is a text reader website TEXT-Utils in which you can count no of char, word and convertt in different case.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://example.com/project2" target="_blank">
+                        <img src="images/p2.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <p>It is a expense tracker app</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://example.com/project3" target="_blank">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <p>Project 3</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="slide">
+            <div class="contact-content">
+                <div class="form-container">
+                    <h2>HIRE ME</h2>
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                        <button type="submit">Send</button>
+                        <div id="response-message"></div>
+                    </form>
+                    
+                </div>
+                <div class="social-links">
+                    <a href="mailto:roshansingh910286@gmail.com" class="social-link"  target="_blank"title="Email">
+                        <img src="images/c11.jpg" alt="Gmail">
+                    </a>
+                    <a href="https://facebook.com/your-profile" class="social-link"  target="_blank"title="Facebook">
+                        <img src="images/c4.webp" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com/roshanrajput6028" class="social-link" target="_blank" title="Instagram">
+                        <img src="images/c6.webp" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/WEBROSH-007" class="social-link"  target="_blank"title="GitHub">
+                        <img src="images/c8.webp" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Roshan Kumar Singh. All rights reserved.</p>
+            </div>
+        </footer>
+
+    <script src="main.css"></script>
+</body>
+</html>
