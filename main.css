@@ -509,7 +509,7 @@ ul {
 
 .form-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     background-color: #1c1c1c; /* Darker shade to contrast with the page background */
     padding: 20px;
     border-radius: 8px;
@@ -533,7 +533,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #444444; /* Slightly lighter border */
