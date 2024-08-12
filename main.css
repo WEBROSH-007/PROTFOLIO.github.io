@@ -100,14 +100,6 @@ header {
     font-size: 1.5em;
 }
 
-.title-bar:hover {
-    background-color: #88e9e2;
-    color: #000000;
-}
-
-.title-bar.clicked {
-    background-color: #4b0606;
-}
 
 nav {
     background-color: #080808;
@@ -132,10 +124,7 @@ nav ul li a {
     display: block;
 }
 
-nav ul li a:hover {
-    background-color: #86dcdb;
-    color: #000000;
-}
+
 
 .navbar-toggle {
     display: none; /* Hidden by default */
@@ -170,10 +159,7 @@ nav ul li a:hover {
     display: block;
 }
 
-.nav-links li a:hover {
-    background-color: #86dcdb;
-    color: #000000;
-}
+
 
 @media (max-width: 768px) {
     .navbar-toggle {
