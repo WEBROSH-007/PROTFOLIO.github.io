@@ -505,75 +505,30 @@ ul {
 }
 
 #contact {
-    background-color: #090909;
+    padding: 20px;
+    background-color: #030303; /* Updated background color */
 }
 
 .contact-content {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
-
-.social-links {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping of items if needed */
-    gap: 10px; /* Space between images */
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.social-link img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    margin-right: 10px; /* Space between image and text */
-}
-.social-link img:hover {
-    animation: shake 0.5s;
-  
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-}
-
-.social-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10%;
-    text-align: center;
-    font-size: 16px;
-    padding: 1px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 0.9em;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.social-link:hover  {
-    opacity: 1;
-}
-.contact-content {
-    position: relative;
-}
 .form-container {
-    margin-bottom:50px;
-    right: 0;
+    width: 100%;
     max-width: 500px;
+    background-color: #1c1c1c; /* Darker shade to contrast with the page background */
     padding: 20px;
-    background: rgb(230, 87, 87);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow for contrast */
 }
 
-.form-container h2 {
-    margin-top: 0;
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff; /* Light text color for contrast */
+    text-align: center;
 }
 
 form {
@@ -581,60 +536,85 @@ form {
     flex-direction: column;
 }
 
-form label {
-    margin-bottom: 5px;
+label {
+    margin-bottom: 8px;
+    color: #cccccc; /* Light gray text color */
 }
 
-form input, form textarea, form button {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 15px;
-    font-size: 1em;
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444444; /* Slightly lighter border */
+    border-radius: 4px;
+    background-color: #333333; /* Matching background for inputs */
+    color: #ffffff; /* White text color */
 }
 
-form button {
-    background-color: #333;
-    color: white;
+button {
+    padding: 10px 20px;
     border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-form button:hover {
-    background-color: #575757;
+button:hover {
+    background-color: #0056b3;
 }
 
+#response-message {
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff; /* Light text color for response message */
+}
+
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     .contact-content {
-        flex-direction: column;
+        padding: 10px;
     }
 
-    .form-container, .social-links {
-        max-width: 100%;
+    .form-container {
+        padding: 15px;
     }
 
-    .social-link {
-        width: 80px;
-        height: 80px;
+    .social-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-link img {
+        width: 25px;
+        height: 25px;
     }
 }
-
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-
 
 
 .footer-container p {
