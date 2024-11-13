@@ -3,174 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Ludiflex</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar-toggle" id="navbar-toggle">
-                &#9776; <!-- Hamburger Icon -->
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Portfolio</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <div class="nav-button">
+            <a href="RS_RESUME_TECH_1.pdf" download class="btn">
+                Download CV <i class="uil uil-file-alt"></i>
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
 
-    <div class="slider">
-        <section id="home" class="slide">
-            <div class="home-content">
-                <div class="text-content">
-                    <h2 class="animate-text">Hi, I'm Roshan Kumar Singh</h2>
-                    <h3 class="animate-text">Front End Developer</h3>
-                </div>
-                <div class="image-content">
-                    <img src="images/rr.jpeg" alt="Roshan Kumar Singh" class="profile-image animate-image">
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Roshan Kumar Singh</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced frontend developer with a passion for creating visually stunning
+                and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <a href="RS_RESUME_TECH_1.pdf" download class="btn">
+                    Download CV <i class="uil uil-file-alt"></i>
+                </a>
+            </div>
+            <div class="social_icons">
+                <a href="https://www.instagram.com/roshanrajput6028" target="_blank">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/roshan-kumar-singh-107939230/" target="_blank">
+                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                </a>
+                <a href="https://github.com/WEBROSH-007" target="_blank">
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="featured-image">
+            <div class="image">
+                <img src="rr.jpeg" alt="avatar">
+            </div>
+        </div>
+        <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+        </div>
+
+    </section>
+    <!-- -------------- ABOUT BOX ---------------- -->
+    <section class="section" id="about">
+        <div class="top-header">
+            <h1>About Me</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>Hi, I'm Roshan Kumar Singh, a passionate Front End Developer with a strong foundation in building dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, React, and WordPress, I specialize in creating engaging user interfaces and seamless user experiences. Over the years, I've honed my skills by working on a diverse range of projects, from personal websites to client portfolios and innovative web solutions, constantly aiming to blend functionality with visually appealing designs.
+
+
+                    </p>
                 </div>
             </div>
-        </section>
-        <section id="about" class="slide">
-            <div class="about-container">
-                <div class="about-content">
-                    <h1>About Me</h1>
-                    <p>My name is Roshan Kumar Singh and I completed my Bachelor's degree in Computer Science from Chandigarh University.
-                    I have a strong foundation in both front-end and back-end development, allowing me to work seamlessly across the entire technology stack.
-                    I'm always eager to learn and stay updated with the latest industry trends and technologies. I believe in continuous self-improvement and have a growth mindset, which motivates me to explore new technologies and frameworks to enhance my development skills.</p>
-                    <a href="images/RS_RESUME_TECH_.pdf" class="resume-button" download>Download Resume</a>
-                </div>
-                <div class="about-extra">
-                    <div class="education">
-                        <h2>Education</h2>
-                        <ul>
-                            <li>Bachelor's in Computer Science - Chandigarh University CGPA : 7.81</li>
-                        </ul>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
                     </div>
-                    <div class="achievements">
-                        <h2>Achievements</h2>
-                        <ul>
-                            <li>Certified in Java Full Stack Development</li>
-                            <li>Certified in Programming with Python</li>
-                            <li>100+ JAVA Questions solved</li>
-                        </ul>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>WordPress</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Node JS</span>
+                        <span>Mongo DB</span>
+                        <span>Express</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>VS Code</span>
+                        <span>Github</span>
+                        <span>MongoDB</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="skills" class="slide">
-            <h1>My Skills</h1>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <img src="images/s1.png" alt="HTML" class="skill-image">
-                    <h2>Languages</h2>
-                    <p>HTM/CSS,JAVA,JS,</p>
-                </div>
-                <div class="skill-box">
-                    <img src="images/s2.jpg" alt="CSS" class="skill-image">
-                    <h2>Database</h2>
-                    <p>MongoDB,MY SQL, Firebase</p>
-                </div>
-                <div class="skill-box">
-                    <img src="images/s3.jpeg" alt="JavaScript" class="skill-image">
-                    <h2>Developer Tools</h2>
-                    <p>VS-code, Git, Github</p>
-                </div>
-                <div class="skill-box">
-                    <img src="images/s4.jpeg" alt="Java" class="skill-image">
-                    <h2>Frameworks</h2>
-                    <p>Bootstrap, Reactjs,Nodejs</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="slide">
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+        <div class="top-header">
             <h1>Projects</h1>
-            <div class="projects-container">
-                <div class="project-item">
-                    <a href="https://webrosh-007.github.io/TextUtils-React/" target="_blank">
-                        <img src="images/pp1.png" alt="Project 1">
-                        <div class="project-overlay">
-                            <p>It is a text reader website TEXT-Utils in which you can count no of char, word and convertt in different case.</p>
-                        </div>
-                    </a>
+        </div>
+        <div class="project-container">
+            <a href="https://webrosh-007.github.io/Weather/" class="project-box">
+                <img src="p2.png" alt="Completed Projects">
+                <div class="overlay">
+                    <h3>Weather Report</h3>
+                    <label>Click to Visit</label>
                 </div>
-                <div class="project-item">
-                    <a href="https://webrosh-007.github.io/Rockerz/" target="_blank">
-                        <img src="images/rock.png" alt="Project 2">
-                        <div class="project-overlay">
-                            <p>It is a music player Rockerz - your fav muisc is here</p>
-                        </div>
-                    </a>
+            </a>
+            <a href="https://webrosh-007.github.io/Rockerz/" class="project-box">
+                <img src="p3.png" alt="Happy Clients">
+                <div class="overlay">
+                    <h3>Spotify Clone </h3>
+                    <label>Click To visit </label>
                 </div>
-                <div class="project-item">
-                    <a href="" target="_blank">
-                        <img src="images/mm.png" alt="Project 3">
-                        <div class="project-overlay">
-                            <p>Currently working on it News API project </p>
-                        </div>
-                    </a>
+            </a>
+            <a href="https://webrosh-007.github.io/TextUtils-React/" class="project-box">
+                <img src="p1.png" alt="Experience">
+                <div class="overlay">
+                    <h3>Text Utils </h3>
+                    <label>Click to Visit </label>
                 </div>
-            </div>
-        </section>
-        
-        <section id="contact" class="slide">
-            <div class="contact-content">
-                <div class="form-container">
-                    <h2>HIRE ME</h2>
-                    <form id="contact-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                        <button type="submit">Send</button>
-                        <div id="response-message"></div>
-                    </form>
-                    
+            </a>
+        </div>
+    </section>
+    
+    
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: roshansingh910286@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Mob : +91 7903852488</p>
                 </div>
-                <div class="social-links">
-                    <a href="mailto:roshansingh910286@gmail.com" class="social-link"  target="_blank"title="Email">
-                        <img src="images/c11.jpg" alt="Gmail">
-                    </a>
-                    <a href="https://facebook.com/your-profile" class="social-link"  target="_blank"title="Facebook">
-                        <img src="images/c4.webp" alt="Facebook">
-                    </a>
-                    <a href="https://instagram.com/roshanrajput6028" class="social-link" target="_blank" title="Instagram">
-                        <img src="images/c6.webp" alt="Instagram">
-                    </a>
-                    <a href="https://github.com/WEBROSH-007" class="social-link"  target="_blank"title="GitHub">
-                        <img src="images/c8.webp" alt="GitHub">
-                    </a>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="footer-container">
-                <p>&copy; 2024 Roshan Kumar Singh. All rights reserved.</p>
-            </div>
-        </footer>
-        <script>
-            document.getElementById('navbar-toggle').addEventListener('click', function() {
-                const navLinks = document.getElementById('nav-links');
-                navLinks.classList.toggle('active');
-            });
-            document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.remove('active');
-        });
-    });
-        </script>
-    <script src="main.css"></script>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Roshan Kumar Singh</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/roshanrajput6028" target="_blank">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/roshan-kumar-singh-107939230/" target="_blank">
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            </a>
+            <a href="https://github.com/WEBROSH-007" target="_blank">
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Roshan Kumar Singh</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
 </body>
 </html>
